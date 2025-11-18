@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head><title>교재 327, 8쪽</title>
+        <style>
+            #txb{width: 200px;}
+        </style>
+    </head>
+    <body>
+        <h2>텍스트 길이와 대소문자</h2>
+        <hr>
+        <input type="text" id="txb" placeholder="greetings">
+        <button id="stb">input</button>
+        <hr>
+        <p id="result"></p>
+        <p id="upresult"></p>
+        <p id="lowresult"></p>
+    <script>
+        let txb=document.getElementById("txb");
+        let stb=document.getElementById("stb");
+        let result=document.getElementById("result");
+        let upresult=document.getElementById("upresult");
+        let lowresult=document.getElementById("lowresult");
+
+        stb.onclick=function() {
+        let val=txb.value;
+        let len=val.length;
+
+        if(len>13) {
+            result.innerHTML="Your greeting is so long!";
+            upresult.innerHTML=result.innerHTML.toUpperCase();
+            lowresult.innerHTML="";
+        }
+        else {
+            result.innerHTML=val;
+            lowresult.innerHTML=val.toLowerCase();
+            upresult.innerHTML="";
+        }
+        //innerHTML: 글자를 넣기 위한 필수 요소
+    }
+    </script>
+    </body>
+</html>

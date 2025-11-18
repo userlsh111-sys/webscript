@@ -1,1 +1,1 @@
-Created by a Korean Jr. college student(CSE) for academic purposes.(course: web, css, javascript)
+Created by a Korean Jr. college student(CSE) for academic purposes.(course: web, css, javascript / ref.: 명품 HTML5+CSS3+Javascript 웹 프로그래밍 개정판, 2022년 황기태 저 / special thanks to ChatGPT..)

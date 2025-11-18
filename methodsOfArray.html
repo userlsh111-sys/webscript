@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head><title>배열 메소들</title></head>
+    <body>
+        <h2>배열 객체의 메소드들 써보기</h2>
+        <hr>
+        <script>
+            let south=["박근혜", "문재인", "윤석열", "이재명"];
+            let north=["하라보지", "정일이", "맷돼지"];
+            let blank;
+            document.write(`south 배열: ${south.join(", ")}<br>`);
+            document.write(`north 배열: ${north.join(", ")}<br><br>`);
+
+            blank=south.concat(north).join(", ");
+            document.write(`좆된 대한민국: ${blank}<br><br>`);
+
+            blank=south.join("election");
+            document.write(`대한민국: ${blank}<br><br>`);
+
+            blank=south.reverse().join(", ");
+            document.write(`거꾸로 가는 대한민국: ${blank}<br><br>`);
+
+            blank=south.sort().join(", ");
+            document.write(`가나다라 대한민국: ${blank}<br><br>`);
+
+            blank=south.slice(1,3).join(", ");
+            document.write(`일부 대한민국: ${blank}<br>(sort시킨 다른 south, 즉 위 배열이 slice됨.)<br><br>`);
+            
+        </script>
+    </body>
+</html>

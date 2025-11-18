@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head><title>날짜 메소들</title>
+        <style>
+            #oneesang{width: 300px; height: 300px;}
+            #dateTips{background-color: aliceblue;}
+        </style>
+    </head>
+    <body>
+        <h2>날짜 객체의 메소드들 써보기</h2>
+        <hr>
+        <img id="oneesang" src="oneesang1.png"><hr>
+    <script>
+        let reze=new Date(2025, 8, 25, 9, 40, 10);
+        let now=new Date();
+        let secs=now.getSeconds();
+        let rz=reze.toLocaleString();
+
+        let oneesang=document.querySelector('#oneesang');
+
+        document.write(`비주얼 인지: ${rz}<hr>`);
+
+        if(secs%2!=0) {
+            document.body.style.backgroundColor="purple";
+            oneesang.src="oneesang1.png"
+        } 
+        else {
+            document.body.style.backgroundColor="green";
+            oneesang.src="oneesang2.png"
+        }
+    </script>
+    <p id="dateTips">
+    1. hr 태그엔 br 기능도 있음.<br>
+    2. script가 자기 전에 나온 img 받기 전 
+    </p>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head><title>스스로 구구단</title></head>
+    <script>
+        function gugudan(dansu) {
+            if(isNaN(dansu) || dansu>9 || dansu<1) {
+                alert(`"${dansu}"단은 잘못 입력된 값입니다.`);
+                return;
+            }
+
+            for(let i=0;i<9;i++) {
+                result=dansu*(i+1);
+                document.write(`${dansu}*${i+1}=${result}<br>`);
+            }
+        }
+    </script>
+    <body>
+        <h2>단수 입력받는 구구단</h2>
+        <hr>
+        <script>
+            let dansu=prompt("원하시는 단수(1~9)");
+            
+            gugudan(dansu);
+            //호출하고 있으니, 매개변수 요망.
+        </script>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head><title>math 메소들</title></head>
+    <script>
+        let ra;
+        let raInt;
+
+        function twoRand() {
+            ra=Math.random()*100;
+            raInt=Math.floor(ra);
+
+            document.getElementById("ra").innerHTML=ra;
+            document.getElementById("raInt").innerHTML=raInt;
+            //~.innerHTML: ~에 내용을 저장
+        }
+    </script>
+    <body>
+        <h2>math 객체의 일부 메소드들</h2>
+        <hr>
+    <script>
+        let inp=prompt("원하시는 양수는?");
+
+        let fl=Math.floor(inp);
+        let ro=Math.round(inp);
+        let sq=Math.sqrt(inp);
+
+        document.write(`입력: ${inp}<br><br>`);
+        document.write(`이하: ${fl}<br>`);
+        document.write(`반올림: ${ro}<br>`);
+        document.write(`제곱근: ${sq}<br><hr>`);
+    </script>
+    <button id="stb" onclick="twoRand()">랜덤(아래)</button> <!--btn이 일반적.-->
+    <p id="ra"></p>
+    <p id="raInt"></p>
+    </body>
+</html>

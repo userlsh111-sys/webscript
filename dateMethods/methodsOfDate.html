@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head><title>날짜 메소들</title></head>
+    <script>
+        function doc(geck, daesa) {
+            document.write(`${daesa}: ${geck}<br>`);
+        }
+    </script>
+    <body>
+        <h2>날짜 객체의 메소드들 써보기</h2>
+        <hr>
+        <script>
+            let now=new Date(); //이 순간
+
+            let utc=now.toUTCString();
+            let yobi=now.getDay(); //0~6: 일~토
+            let hours=now.getHours();
+            let mins=now.getMinutes();
+            let secs=now.getSeconds();
+            let nw=now.toLocaleString();
+
+            doc(nw, '지금(로칼)');
+            document.write(`<hr>`);
+            doc(yobi, '지금(day의 정수)');
+            doc(hours, '지금(hour)');
+            doc(mins, '지금(minute)');
+            doc(secs, '지금(second)');
+            document.write(`<hr>`);
+            doc(rz, 'Reze arc.(로칼)');
+            document.write(`<hr>`);
+            doc(utc, '지금(UTC)');
+        </script>
+    </body>
+</html>

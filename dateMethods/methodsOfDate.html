@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
-    <head><title>날짜 메소들</title></head>
+    <head><title>날짜 메소들</title>
+        <style>
+            #country{width: 300px; height: 300px;}
+        </style>
+    </head>
     <script>
         function doc(geck, daesa) {
             document.write(`${daesa}: ${geck}<br>`);
@@ -9,8 +13,11 @@
     <body>
         <h2>날짜 객체의 메소드들 써보기</h2>
         <hr>
+        <img id="country" src="greenwich.jpg">
+        <hr>
         <script>
             let now=new Date(); //이 순간
+            let reze=new Date(2025, 8, 25, 9, 40, 10);
 
             let utc=now.toUTCString();
             let yobi=now.getDay(); //0~6: 일~토
@@ -18,7 +25,14 @@
             let mins=now.getMinutes();
             let secs=now.getSeconds();
             let nw=now.toLocaleString();
+            let rz=reze.toLocaleString();
 
+            let country=document.getElementById("country");
+            if(hours==9) {country.src="hitomi.jpg"}
+            else {} //암것도 ㄴㄴ
+
+            doc(now, '지금');
+            document.write(`<hr>`);
             doc(nw, '지금(로칼)');
             document.write(`<hr>`);
             doc(yobi, '지금(day의 정수)');
@@ -27,6 +41,7 @@
             doc(secs, '지금(second)');
             document.write(`<hr>`);
             doc(rz, 'Reze arc.(로칼)');
+            //여기가 안 됐더니 다음 것도 안 됐음.
             document.write(`<hr>`);
             doc(utc, '지금(UTC)');
         </script>

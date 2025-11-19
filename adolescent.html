@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>adoloscent</title>
+    <style>
+      body {
+        background-color: blanchedalmond;
+      }
+      summary {
+        font-size: 20px;
+        font-weight: bold;
+      }
+      .photo {
+        font-style: italic;
+        font-size: 13px;
+      }
+      ul:hover .middle {
+        color: yellow;
+        background-color: green;
+      }
+      ul:hover .ne {
+        background-color: yellow;
+      }
+      .mid:hover .friends {
+        font-weight: bold;
+        color: mediumseagreen;
+        background-color: rgb(247, 191, 181);
+      }
+      .mid:hover .high {
+        font-weight: bold;
+      }
+      .hate {
+        text-decoration: line-through;
+        visibility: hidden;
+      }
+      .equation:hover .hate {
+        visibility: visible;
+      } /*visibility와 display는 끼리끼리만 됨.*/
+      /*text-decoration이 "display:none"과 랜더링 안 됨.*/ /*안 보이는 것만 hover할 순 없음.*/
+      /*태그 속에 바꾸고픈 태그를 넣어야 바뀜.*/
+      .mid:hover .identify {
+        font-weight: bold;
+      }
+      .mid:hover .reaper {
+        background-color: black;
+        color: white;
+        font-weight: bold;
+      }
+      .mid:hover .bright {
+        background-color: white;
+        color: black;
+        font-weight: bold;
+      }
+      .blueclub {
+        color: rgb(31, 180, 238);
+        font-weight: bold;
+        display: none;
+      }
+      .hack:hover .blueclub {
+        display: contents;
+      } /*content는 줄 바꾸지 않고 이어짐.*/
+      /*(hate와 equation 셀렉터와 동일)*/
+      .hack:hover .money {
+        color: green;
+        font-weight: bold;
+      }
+      .hack:hover .paju {
+        color: darkblue;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>청소년기</h2>
+    <progress value="15" max="22"></progress>
+    <hr />
+    <img
+      src="자소이미지/광복71주년.jpg"
+      alt="중2"
+      width="200px"
+      height="350px"
+    /><br /><span class="photo"
+      >광복 71주년 행사에서 군 장병 분들이 군복 체험 부스를 운영하셨다.<br />위장
+      잘하면 건빵 주는 이벤트도 있었는데, 내가 너무 잘해서 당황하셨던 장병 분의
+      표정이 기억에 남는다.</span
+    ><br /><br />
+    <details>
+      <summary>주요 연표</summary>
+      <ul>
+        <li>
+          2015년: XX초와 같은 동에 있던
+          <span class="middle">XX중학교</span> 입학
+        </li>
+        <li>
+          2016년: <span class="ne">엄마께서 운영하시던</span> 학원에 다님.
+        </li>
+      </ul>
+    </details>
+    <br />
+    <details>
+      <summary>중학교</summary>
+      <br /><img
+        src="자소이미지/중2단합중.jpeg"
+        alt="2016년 12월 9일 17시 40분 쯤..."
+        width="350px"
+        height="200px"
+      /><br /><span class="photo"
+        >9년 전 반 단합 중에 찍은 셀카. 우측이 나다.</span
+      ><br /><br />
+      <span class="mid">
+        중1 때 처음으로 OMR 카드를 접했는데, 컴퓨터가
+        <span class="identify">펜 잉크를 인식</span> 하는 게 마냥 신기했다.<br />
+        2학년이 되자, <span class="friends">재밌는 친구들</span>을 만난 덕에
+        활발히 지냈다. 초등학생 때 친해진 절친과는
+        <span class="equation"
+          >방정식 관련<span class="hate">(수학 공부 싫다는...)</span></span
+        >
+        UCC를 만들어서 수학 시간에 선보였고, 반 인싸랑도 절친마냥 농담을 주고
+        받았다. 한 번은 이 친구가 날 <span class="reaper">XXX</span>이라고
+        불렀는데, 그래서 <span class="bright">XXXX</span>라는 닉네임을
+        지었다.<br />
+        3학년부턴 본격적인 입시에 들어갔고,
+        <span class="high">고교 때를 위해 시험을 어렵게 냈다</span>는 3학년부장
+        선생님 말이 아직도 기억난다.
+      </span>
+    </details>
+    <br />
+    <details>
+      <summary>엄마 학원</summary>
+      <span class="hack">
+        중2 때, 엄마께서 미용실<span class="blueclub"
+          >(블루클럽 "부개남점" <-- 잘 깎음.)</span
+        >와 함께 운영하셨던 학원에 다녔었다.<br />
+        학원이 <span class="paju">파주 운정</span>에 있던지라, 엄마께서 매달
+        <span class="money">교통비(사실상 용돈)</span>를 주셨다.
+      </span>
+    </details>
+  </body>
+</html>

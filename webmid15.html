@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head><meta charset="utf-8"><title>webmid15(폼)</title></head>
+    <body>
+        <h2>보안취급</h2>
+        <hr>
+        <form name="simpleform" method="get">
+            ID: <input type="text" size="15" value=""><br>
+            PW: <input type="password" size="15" value=""><input type="submit" value="submit">
+        </form>
+        <br><br>
+        <hr><hr>
+        <br>
+        <h2>이력서 작성</h2>
+        <hr>
+        <form>
+            자기소개: <textarea cols="50" rows="10">(마음대로 써주세요.)</textarea><br>
+            국적: <input type="text" list="country">
+            <datalist id="country">
+                <option value="Japan">
+                <option value="ROK">
+                <option value="USA">
+                <option value="DPRK, China">
+                <option value="etc.">
+            </datalist><br>
+            지원 분야: <input type="text" list="field">
+            <datalist id="field">
+                <option value="WEB">
+                <option value="C">
+                <option value="JAVA">
+                <option value="COBOL">
+            </datalist><br><br>
+            <input type="submit" value="SUBMIT">
+        </form>
+    </body>
+</html>

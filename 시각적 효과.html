@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head><meta charset="UTF-8"><title>시각적 효과</title>
+    <style>
+        div{font-style: normal; font-size: 30px; font-family: verdana;}
+        .drop{text-shadow: 3px 3px red; cursor: help;}
+        .blur{text-shadow: 4px 4px darkred; cursor: pointer;}
+        .multi:hover{color: red; text-shadow: 2px 2px 5px black, 0px 0px 10px darkred;}
+        /*multi와 같이, 한꺼번에 나타낼 수도.*/
+        .generic{color: aliceblue; width: 300px; height: 300px; padding: 40px; border: 20px solid gray; 
+            /*복습: w랑 h는 콘텐츠다.*/
+            background-image: url("generic.jpg"); background-size: 300px 300px; background-repeat: no-repeat; background-position: center;
+            box-shadow: 10px 10px 20px darkblue;}
+        .anything{color: aliceblue; width: 400px; height: 600px; padding: 20px; border: 10px solid goldenrod;
+        background-image: url("anythingiwant.png"); background-size: 400px 600px; background-repeat: no-repeat; background-position: center;
+    box-shadow: 10px 10px 40px 10px red;}
+    /*한 쪽에 px를 빼니 너무 넓다.*/
+    </style>
+    </head>
+    <body>
+        <h2>Generic 대사(뇌피셜)</h2>
+        <hr>
+        <div class="generic">제너릭</div><br>
+        (Generic demon, ????)<br><br>
+        <div class="drop">What's up?</div>
+        <div class="blur">Wanna play with me? ;D</div><br><br><br><br>
+        <div class="multi">I can be anything you want me to be. ;)</div><br><br>
+        <div class="anything">"뭐든지."</div>
+        <a href="https://www.deviantart.com/tran4of3/art/Generic-the-Template-Demon-962137185"
+        target="_blank">이미지</a>
+    </body>
+</html>

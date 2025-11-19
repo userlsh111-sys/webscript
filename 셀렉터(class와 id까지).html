@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>셀렉터(class와 id까지)</title>
+    <style>
+      body {
+        background-color: aliceblue;
+        margin: 30px;
+      }
+      h2 {
+        text-align: center;
+        color: slategray;
+      }
+      span {
+        color: darkblue;
+        font-size: 20px;
+      } /*같은 태그의 셀렉터에 디폴트로 적용됨. 
+      싫으면 셀렉터를 따로 바꾸면 됨.*/
+      .moh{color:yellow; background-color: goldenrod; font-size: 30px;}
+      .green {
+        color: green;
+        font-size: 40px;
+      } /*class는 . 붙이기*/
+      ol {
+        background-color: rgb(231, 198, 117);
+      }
+    </style>
+  </head>
+  <body>
+    <h2>로버트 제임스 밀러</h2>
+    <hr />
+    <ol type="I">
+      <li>애리조나주서 유년기를 보냄.</li>
+      <li>그린 베레 양성과정 통과 후 하사 진급</li>
+      <li>미 육군 제3특전단 배치</li>
+      <li>2008년, 2차 아프간 파병 중 전사</li>
+      <li>오바마 대통령, 밀러 중사에 <span class="moh">명예훈장</span> 수여</li>
+    </ol>
+    <p style="color: brown">
+      밀러는 어릴적 학교 과제를 위해
+      <span>2차대전 참전용사(나치 독일 해군 출신)</span>를 인터뷰해서 교사로부터
+      가산점을 받기도 했다.<br />
+      마침 가족 중에 참전용사가 많아서였을까, 그는 영화로도 유명한
+      <span class="green">그린 베레</span>가 됐고 적과 싸우며 아군을 구하고
+      전사했다.
+    </p>
+    <!--style 속성이 1순위인데, style(span) 태그가 우선으로 됨.-->
+    <br />
+    <footer>
+    <dl>
+        <dt>그린 베레</dt>
+        <dd>미국 육군 특수부대로, Special Forces라고도 불린다.</dd>
+        <dt>제3특전단</dt>
+        <dd>그린 베레 부대 중 중동에 파견된 부대</dd>
+      </dl><!--이 dl 태그서 p style 적용 안 됨.-->
+      <ul>
+        출처
+        <li>영어 위키백과(Robert James Miller)</li>
+        <li>미 육군 특수작전사령부 사이트(소개, 제3특전단)</li>
+        <li>미 육군 Medal of Honor 사이트(밀러 중사 부분)</li>
+      </ul>
+    </footer> <!--내용을 부분적으로 묶을 거면 article-->
+  </body>
+</html>
